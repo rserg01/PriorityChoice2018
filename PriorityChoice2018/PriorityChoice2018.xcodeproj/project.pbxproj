@@ -15,6 +15,12 @@
 		596A83CC21781B3800331593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596A83CA21781B3800331593 /* LaunchScreen.storyboard */; };
 		596A83D721781B3900331593 /* PriorityChoice2018Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83D621781B3900331593 /* PriorityChoice2018Tests.swift */; };
 		596A83E221781B3900331593 /* PriorityChoice2018UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83E121781B3900331593 /* PriorityChoice2018UITests.swift */; };
+		596A83F621781C0200331593 /* IncomeProtection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F021781C0200331593 /* IncomeProtection.swift */; };
+		596A83F721781C0200331593 /* Education.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F121781C0200331593 /* Education.swift */; };
+		596A83F821781C0200331593 /* Investment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F221781C0200331593 /* Investment.swift */; };
+		596A83F921781C0200331593 /* EstatePlanning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F321781C0200331593 /* EstatePlanning.swift */; };
+		596A83FA21781C0200331593 /* Retirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F421781C0200331593 /* Retirement.swift */; };
+		596A83FB21781C0200331593 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83F521781C0200331593 /* Health.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		596A83DD21781B3900331593 /* PriorityChoice2018UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriorityChoice2018UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		596A83E121781B3900331593 /* PriorityChoice2018UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityChoice2018UITests.swift; sourceTree = "<group>"; };
 		596A83E321781B3900331593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		596A83F021781C0200331593 /* IncomeProtection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomeProtection.swift; sourceTree = "<group>"; };
+		596A83F121781C0200331593 /* Education.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Education.swift; sourceTree = "<group>"; };
+		596A83F221781C0200331593 /* Investment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Investment.swift; sourceTree = "<group>"; };
+		596A83F321781C0200331593 /* EstatePlanning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EstatePlanning.swift; sourceTree = "<group>"; };
+		596A83F421781C0200331593 /* Retirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Retirement.swift; sourceTree = "<group>"; };
+		596A83F521781C0200331593 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,7 @@
 		596A83BD21781B3800331593 /* PriorityChoice2018 */ = {
 			isa = PBXGroup;
 			children = (
+				596A83EF21781BEF00331593 /* Models */,
 				596A83BE21781B3800331593 /* AppDelegate.swift */,
 				596A83C021781B3800331593 /* ViewController.swift */,
 				596A83C221781B3800331593 /* Main.storyboard */,
@@ -126,6 +139,19 @@
 				596A83E321781B3900331593 /* Info.plist */,
 			);
 			path = PriorityChoice2018UITests;
+			sourceTree = "<group>";
+		};
+		596A83EF21781BEF00331593 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				596A83F121781C0200331593 /* Education.swift */,
+				596A83F321781C0200331593 /* EstatePlanning.swift */,
+				596A83F521781C0200331593 /* Health.swift */,
+				596A83F021781C0200331593 /* IncomeProtection.swift */,
+				596A83F221781C0200331593 /* Investment.swift */,
+				596A83F421781C0200331593 /* Retirement.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +290,13 @@
 			files = (
 				596A83C121781B3800331593 /* ViewController.swift in Sources */,
 				596A83BF21781B3800331593 /* AppDelegate.swift in Sources */,
+				596A83FA21781C0200331593 /* Retirement.swift in Sources */,
+				596A83F721781C0200331593 /* Education.swift in Sources */,
 				596A83C721781B3800331593 /* PriorityChoice2018.xcdatamodeld in Sources */,
+				596A83F821781C0200331593 /* Investment.swift in Sources */,
+				596A83F921781C0200331593 /* EstatePlanning.swift in Sources */,
+				596A83FB21781C0200331593 /* Health.swift in Sources */,
+				596A83F621781C0200331593 /* IncomeProtection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
