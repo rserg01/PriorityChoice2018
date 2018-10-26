@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		590AC19421818E5400103DC1 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AC19321818E5400103DC1 /* Helpers.swift */; };
+		590AC19721818E9800103DC1 /* MainMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AC19621818E9800103DC1 /* MainMenuCell.swift */; };
+		590AC19A21829E5100103DC1 /* TopMenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 590AC19921829E5100103DC1 /* TopMenuBar.swift */; };
 		596A83BF21781B3800331593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83BE21781B3800331593 /* AppDelegate.swift */; };
 		596A83C121781B3800331593 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596A83C021781B3800331593 /* HomeViewController.swift */; };
 		596A83C721781B3800331593 /* PriorityChoice2018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 596A83C521781B3800331593 /* PriorityChoice2018.xcdatamodeld */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		590AC19321818E5400103DC1 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		590AC19621818E9800103DC1 /* MainMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCell.swift; sourceTree = "<group>"; };
+		590AC19921829E5100103DC1 /* TopMenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuBar.swift; sourceTree = "<group>"; };
 		596A83BB21781B3800331593 /* PriorityChoice2018.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriorityChoice2018.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596A83BE21781B3800331593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		596A83C021781B3800331593 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		590AC19221818E3600103DC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				590AC19321818E5400103DC1 /* Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		590AC19521818E8800103DC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				590AC19621818E9800103DC1 /* MainMenuCell.swift */,
+				590AC19921829E5100103DC1 /* TopMenuBar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		590AC19821818EF600103DC1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				596A83C021781B3800331593 /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		596A83B221781B3800331593 = {
 			isa = PBXGroup;
 			children = (
@@ -109,9 +140,11 @@
 		596A83BD21781B3800331593 /* PriorityChoice2018 */ = {
 			isa = PBXGroup;
 			children = (
+				590AC19821818EF600103DC1 /* Controllers */,
+				590AC19521818E8800103DC1 /* Views */,
+				590AC19221818E3600103DC1 /* Extensions */,
 				596A83EF21781BEF00331593 /* Models */,
 				596A83BE21781B3800331593 /* AppDelegate.swift */,
-				596A83C021781B3800331593 /* HomeViewController.swift */,
 				596A83C821781B3800331593 /* Assets.xcassets */,
 				596A83CD21781B3800331593 /* Info.plist */,
 				596A83C521781B3800331593 /* PriorityChoice2018.xcdatamodeld */,
@@ -286,10 +319,13 @@
 			files = (
 				596A83C121781B3800331593 /* HomeViewController.swift in Sources */,
 				596A83BF21781B3800331593 /* AppDelegate.swift in Sources */,
+				590AC19A21829E5100103DC1 /* TopMenuBar.swift in Sources */,
 				596A83FA21781C0200331593 /* Retirement.swift in Sources */,
+				590AC19421818E5400103DC1 /* Helpers.swift in Sources */,
 				596A83F721781C0200331593 /* Education.swift in Sources */,
 				596A83C721781B3800331593 /* PriorityChoice2018.xcdatamodeld in Sources */,
 				596A83F821781C0200331593 /* Investment.swift in Sources */,
+				590AC19721818E9800103DC1 /* MainMenuCell.swift in Sources */,
 				596A83F921781C0200331593 /* EstatePlanning.swift in Sources */,
 				596A83FB21781C0200331593 /* Health.swift in Sources */,
 				596A83F621781C0200331593 /* IncomeProtection.swift in Sources */,
