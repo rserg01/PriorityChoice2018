@@ -30,6 +30,9 @@ class TopMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, 
         addSubview(collectionView)
         addConstraintsWithFormat(format: "H:|[v0]|", views: collectionView)
         addConstraintsWithFormat(format: "V:|[v0]|", views: collectionView)
+        
+        let selectedIndexPath = IndexPath(item: 0, section: 0)
+        collectionView.selectItem(at: selectedIndexPath, animated: false, scrollPosition: .init(rawValue: 0))
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -38,7 +41,8 @@ class TopMenuBar: UIView, UICollectionViewDelegate, UICollectionViewDataSource, 
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TopMenuCell
-        cell.iconView.image = UIImage(named: topMenuImages[indexPath.item])
+        cell.iconView.image = UIImage(named: topMenuImages[indexPath.item])?.withRenderingMode(.alwaysTemplate)
+        cell.tintColor = UIColor.rgb(red: 91, green: 14, blue: 13)
         return cell
     }
     
@@ -62,6 +66,19 @@ class TopMenuCell: BaseTopCell {
         icon.image = UIImage(named: "Todo_Icon")
         return icon
     }()
+    
+    override var isHighlighted: Bool {
+        didSet {
+            iconView.tintColor = isHighlighted ? UIColor.white : UIColor.rgb(red: 91, green: 14, blue: 13)
+        }
+    }
+    
+    override var isSelected: Bool {
+        didSet {
+            iconView.tintColor = isSelected ? UIColor.white : UIColor.rgb(red: 91, green: 14, blue: 13)
+        }
+        
+    }
     
     override func setupViews() {
         super.setupViews()
